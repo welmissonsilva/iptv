@@ -1,0 +1,4 @@
+https://raw.githubusercontent.com/welmissonsilva/iptv/main/iptv-welmisson.m3u
+
+https://www.meutedio.com.br/p/lista-iptv-com-canais-gratis-e-legais.html
+https://raw.githubusercontent.com/helenfernanda/gratis/main/iptvlegal.m3u
