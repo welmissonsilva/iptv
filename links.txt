@@ -1,5 +1,7 @@
 https://raw.githubusercontent.com/welmissonsilva/iptv/main/iptv-welmisson.m3u
 
-https://i.mjh.nz/
+https://i.mjh.nz/ (lista de guia de programação de vários streams)
+https://github.com/iptv-org/iptv (lista de guia de programação de vários streams)
+
 https://www.meutedio.com.br/p/lista-iptv-com-canais-gratis-e-legais.html
 https://raw.githubusercontent.com/helenfernanda/gratis/main/iptvlegal.m3u
