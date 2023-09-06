@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environment xmlns="http://www.dataprev.gov.br/ns/javaee/env" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dataprev.gov.br/ns/javaee/env env.xsd ">
+	<env key="product" value="app-catalogo-dados-web-dsv"/>
+	<env key="system" value="app-catalogo-dados-web-dsv"/>
+	<env key="organization" value="DATAPREV"/>
+ 
+	<!-- URL para acesso aos serviços do GERID (utilizar alguma das URL's indicadas na seção a seguir)-->
+	<env key="geridservices.url" value="https://hiam.gerid.dataprev.gov.br/geridServices/api/rest"/>
+ 
+	<!-- Autenticação com o gerid-services via APACHE/BASIC (utilizar APACHE/BASIC ou BARRAMENTO/SSL-2WAY) -->
+	<env key="geridservices.username" value="app_user"/>
+	<env key="geridservices.password" value="dataprev"/>
+ 
+ 
+	<!-- Todas as configurações anteriores são OBRIGATÓRIAS estarem no env.xml. As configurações
+             a seguir são obrigatórias também, mas podem ficar no env.xml OU no cadastro da aplicação no
+             GID (conforme explicação feita na seção anterior)-->
+ 	<env key="authn.cas.service" value="http://v121d243.prevnet:8080/admdados" />
+ 	<env key="authn.cas.fixed.initial.url" value="http://v121d243.prevnet:8080/admdados" />
+ 	<env key="authn.cas.server.login.url" value="https://hiam.gerid.dataprev.gov.br/cas/login" />
+ 	<env key="authn.cas.server.url.prefix" value="https://hiam.gerid.dataprev.gov.br/cas" />
+ 	<env key="authn.logout.page" value="https://hiam.gerid.dataprev.gov.br/cas/logout?service=http://v121d243.prevnet:8080/admdados" />
+ 	<env key="cas.logout.url" value="https://hiam.gerid.dataprev.gov.br/cas/logout" />
+ 	<env key="authn.attributes.spec" value="rgUf,givenName,uid,employeeNumber,mail,prevCpf=>id,geridRole=>organizationalRole,sn,cn,attributeCertificate,telephoneNumber,uo,dn,dc,papel," />
+ 	<env key="authn.domain.regex" value=".*" />
+ 	<env key="authn.extension.bypass" value=".jpg;.gif;.css;.js;.png" />
+ 	<env key="geridservices.identity.service.name" value="/v2/pessoaIAM/basicoComCredenciais/cpf/{cpf}" />
+ 	<env key="geridservices.system.service.name" value="/v2/sistemaIAM/basicoComEnvironment/organizacao/{organizacao}/sistema/{sistema}" />
+ 	<env key="authn.allow.roleless.users" value="true" />
+ 
+	<!-- Tempo de recarga em segundos das propriedades do cadastro do sistema no GID (e env.xml). Essa
+             propriedade só pode ser definida no env.xml, mas não é obrigatória. Caso não seja definida a 
+             aplicação nunca irá recarregar as suas propriedades em tempo de execução-->
+   	<env key="gerid.sdk.env.refresh.interval" value="600"/> 
+</environment>
